@@ -36,5 +36,12 @@ models:
     # Applies to all files under models/example/
     ny_taxi_data_dbt:
       materialized: table
-    # example:
-    #   materialized: view
+
+vars:
+  payment_type_values: [1, 2, 3, 4, 5, 6]
+
+seeds: 
+    zcamp_ny_taxi_bq_dbt:
+        taxi_zone_lookup:
+            +column_types:
+                locationid: numeric

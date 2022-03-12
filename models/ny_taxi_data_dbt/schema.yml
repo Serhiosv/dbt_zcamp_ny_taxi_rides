@@ -2,7 +2,7 @@
 version: 2
 
 sources:
-    - name: data_needed
+    - name: trips_data_all_colours
       database: dtc-de-course-339411
       schema: trips_data_all
       tables:
