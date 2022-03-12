@@ -1,0 +1,18 @@
+
+version: 2
+
+sources:
+    - name: data_needed
+      database: dtc-de-course-339411
+      schema: trips_data_all
+      tables:
+        - name: fhv_tripdata
+        - name: green_tripdata
+        - name: yellow_tripdata
+
+models:
+    - name: zcamp_temp
+      description: "A starter dbt model"
+
+    - name: zcamp_temp_second_table
+      description: "Zcamp second table"
